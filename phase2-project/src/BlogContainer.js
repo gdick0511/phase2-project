@@ -1,10 +1,12 @@
-
+import BlogCard from './BlogCard'
 
 
 function BlogContainer ({blogs}) {
-    console.log({blogs})
-    return(
-        <div> </div>
+    const renderCards = blogs.map((blog) => <BlogCard key={blog.id} title = {blog.title} author = {blog.author} blogpost = {blog.blogpost} /> )
+      return(
+        <div> 
+          {renderCards}
+        </div>
       )
 };
 
