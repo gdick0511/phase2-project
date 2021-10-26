@@ -1,9 +1,10 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
+import styled from 'styled-components'
 
 function NavBar () {
     return(
-        <div>
+        <NavBarContainer>
             <NavLink to="/">
              Home
             </NavLink> 
@@ -13,8 +14,13 @@ function NavBar () {
             <NavLink to="/createpost">
              CreatePost 
             </NavLink> 
-        </div>
+        </NavBarContainer>
     )
 };
 
 export default NavBar
+
+const NavBarContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+`
