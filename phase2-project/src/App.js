@@ -27,7 +27,7 @@ function App() {
             <CreatePost />
           </Route>
           <Route path="/">
-            <Home />
+            <Home blogs={blogs}/>
           </Route>
         </Switch>  
     </div>
