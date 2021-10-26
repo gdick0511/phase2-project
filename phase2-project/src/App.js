@@ -4,7 +4,6 @@ import NavBar from './NavBar'
 import Home from './Home'
 import About from './About'
 import CreatePost from './CreatePost'
-// import './App.css';
 
 function App() {
   const [blogs, setBlogs] = useState([])
@@ -21,7 +20,7 @@ function App() {
       <NavBar />
         <Switch>
           <Route path="/about">  
-            <About />
+            <About blogs={blogs} />
           </Route>
           <Route path="/createpost">  
             <CreatePost />

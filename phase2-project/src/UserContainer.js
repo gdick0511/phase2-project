@@ -1,8 +1,13 @@
 
+import UserCard from './UserCard'
 
-
-function UserContainer () {
+function UserContainer ({blogs}) {
+    const renderUserCards = blogs.map((blog) => <UserCard key={blog.id} author = {blog.author} image={blog.image} bio = {blog.bio} /> )
     return(
-        <div>UserInfo</div>
+        <div>
+            {renderUserCards}
+        </div>
     )
 }
+
+export default UserContainer

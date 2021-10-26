@@ -1,9 +1,11 @@
+import UserContainer from './UserContainer'
 
-
-function About () {
+function About ({blogs}) {
+    
     return(
         <div>
             <h2>About</h2>
+            <UserContainer blogs={blogs} />
         </div>
     )
 };
