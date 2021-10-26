@@ -1,10 +1,10 @@
+import BlogContainer from "./BlogContainer"
 
-
-function Home () {
+function Home ({blogs}) {
     return (
         <div>
             <h2>Home</h2>
-           {/* <BlogContainer /> */}
+           <BlogContainer blogs={blogs}/>
         </div>
     )
 };
