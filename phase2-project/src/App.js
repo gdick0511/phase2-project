@@ -19,10 +19,17 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
-      <CreatePost />
-      <h1>Hello world!</h1>
+        <Switch>
+          <Route path="/about">  
+            <About />
+          </Route>
+          <Route path="/createpost">  
+            <CreatePost />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>  
     </div>
   );
 }
