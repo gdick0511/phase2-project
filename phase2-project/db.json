@@ -9,11 +9,12 @@
       "id": 1
     },
     {
-      "title": "I ",
-      "blogpost": "Am",
-      "bio": "Good",
-      "image": "Sir",
-      "id": 10
+      "author": "Kameron",
+      "title": "My First Blog",
+      "blogpost": "Here is my first Blog",
+      "bio": "I am from planet Earth",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtvHGH0PqVF7Ml7UXmsW9wuZxa0IRHnm2HQ&usqp=CAU",
+      "id": 2
     }
   ]
 }

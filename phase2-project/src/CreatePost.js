@@ -3,7 +3,7 @@ import { useState } from "react"
 function CreatePost ({setBlogs}) {
 
     const [newBlogInfo, setNewBlogInfo] = useState({
-        name: '',
+        author: '',
         title: '',
         blogpost: '',
         bio: '',
@@ -46,9 +46,9 @@ function CreatePost ({setBlogs}) {
             <h2>Create a Post!</h2>
             <form onSubmit={handleSubmit}>
                 <label>
-                 Name:
+                 Author:
                     <input type="text" 
-                    name="name" 
+                    name="author" 
                     value={newBlogInfo.author} 
                     onChange={handleAdd} 
                     placeholder="Author name here..."/>
