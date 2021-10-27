@@ -19,7 +19,7 @@ function CreatePost () {
                 </label>
                 <label>
                  Bio: 
-                    <input type="text" name="name" placeholder="Your bio here..."/>
+                    <textarea type="text" name="name" placeholder="Your bio here..."/>
                 </label>
                 <label>
                 Image:
