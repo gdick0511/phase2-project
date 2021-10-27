@@ -15,7 +15,7 @@ function CreatePost () {
                 </label>
                 <label>
                  Blog: 
-                    <input type="text" name="name" placeholder="Write your story..."/>
+                    <textarea type="text" name="name" placeholder="Write your story..."/>
                 </label>
                 <label>
                  Bio: 
