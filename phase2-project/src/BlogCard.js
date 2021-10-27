@@ -6,7 +6,8 @@ function BlogCard ({author , title, blogpost}) {
         <div>
             <h1>{title}</h1>
             <h3> Author: {author} </h3>
-            <p>Blog: {blogpost}</p>
+            <h4>Blog: </h4>
+            {blogpost}
 
         </div>
     )

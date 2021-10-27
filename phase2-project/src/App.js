@@ -23,7 +23,7 @@ function App() {
             <About blogs={blogs} />
           </Route>
           <Route path="/createpost">  
-            <CreatePost />
+            <CreatePost setBlogs={setBlogs}/>
           </Route>
           <Route path="/">
             <Home blogs={blogs}/>
