@@ -1,5 +1,5 @@
 import BlogCard from './BlogCard'
-// import styled from 'react-components'
+import styled from 'styled-components'
 
 
 function BlogContainer ({blogs}) {
@@ -12,3 +12,10 @@ function BlogContainer ({blogs}) {
 };
 
 export default BlogContainer
+
+
+
+const blogContainer = styled.div`
+  height: 0;
+  padding-bottom: 
+`

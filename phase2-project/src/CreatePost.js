@@ -1,6 +1,7 @@
 import { useState } from "react"
 import ReactQuill from "react-quill"
 import 'react-quill/dist/quill.snow.css'
+// import styled from ''
 
 function CreatePost ({setBlogs}) {
 
@@ -120,3 +121,15 @@ function CreatePost ({setBlogs}) {
 
 
 export default CreatePost;
+
+
+
+
+
+// const createPostBox = styled.div`
+//     box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
+//     margin: 30px;
+//     border: 40px;
+//     width: 500px;
+//     height: 160px;
+//     border-radius: 8px;

@@ -25,15 +25,41 @@ function BlogCard ({author , title, blogpost}) {
 export default BlogCard
 
 
+// const Card = styled.div`
+//     display: inline;
+//     backgroud-repeat: no-repeat;
+//     background-position: center 90%;
+//     float: left;
+//     margin: 2%;
+//     padding: 1%;
+//     outline: #3B0B0B dotted thick;
+//     transition: 0.75s;
+//     opacity: 1;
+//     h1,h3,h4{
+//         text-align: center;
+//         vertical-align: middle;
+//         text-wrap: wrap;
+//     }
+
+
+// `
+
+
+
 const Card = styled.div`
     box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
-    margin: 30px;
-    border: 40px;
+    margin: 2%;
+    padding: 1%;
+    
     width: 500px;
-    height: 160px;
+    max-height: 100%;
     border-radius: 8px;
+    text-wrap: wrap; 
     h1,h3,h4{
         text-align: center;
+        vertical-align: middle;
+        text-wrap: wrap;
+        
     }
 
 
