@@ -50,17 +50,16 @@ const Card = styled.div`
     box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
     margin: 2%;
     padding: 1%;
-    
-    width: 500px;
+    width: 700px;
     max-height: 100%;
     border-radius: 8px;
-    text-wrap: wrap; 
+    text-wrap: wrap;
+    overflow: auto;
+    text-overflow: ellipsis;
     h1,h3,h4{
         text-align: center;
         vertical-align: middle;
         text-wrap: wrap;
-        
     }
-
 
 `
