@@ -1,5 +1,7 @@
 import {useState} from 'react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
+
 
 function BlogCard ({author , title, blogpost}) {
 
@@ -14,7 +16,7 @@ function BlogCard ({author , title, blogpost}) {
         <Card onClick={handleBlogClick}>
             <h1>{title}</h1>
             <h3> Author: {author} </h3>
-            {showBlog ? <h4>Blog <p>{blogpost}</p> </h4>
+            {showBlog ? <h4>Blog {parse(blogpost)} </h4>
             : null }
         </Card>
     )

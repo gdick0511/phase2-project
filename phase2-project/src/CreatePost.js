@@ -1,6 +1,9 @@
 import { useState } from "react"
+import ReactQuill from "react-quill"
+import 'react-quill/dist/quill.snow.css'
 
 function CreatePost ({setBlogs}) {
+
 
     const [newBlogInfo, setNewBlogInfo] = useState({
         author: '',
@@ -17,9 +20,15 @@ function CreatePost ({setBlogs}) {
         }))
     }
 
+    function handleBlogChange(e){
+        setNewBlogInfo((currentNewBlogPost) => ({
+            ...currentNewBlogPost,
+            blogpost: e
+        }))
+    }
+
     function handleSubmit(e){
         e.preventDefault()
-        // console.log('YEET')
         const newBlog ={
             author: newBlogInfo.author,
             title: newBlogInfo.title,
@@ -36,9 +45,16 @@ function CreatePost ({setBlogs}) {
             body: JSON.stringify(newBlog),
         })
             .then((resp)=> resp.json())
-            .then((allBlogs) =>
+            .then((allBlogs) => {
             setBlogs((currentBlogs) => [allBlogs,...currentBlogs])
-            );
+            setNewBlogInfo({
+            author: '',
+            title: '',
+            blogpost: '',
+            bio: '',
+            image: ''
+    })
+            });
     }
 
     return (
@@ -61,14 +77,25 @@ function CreatePost ({setBlogs}) {
                     onChange={handleAdd} 
                     placeholder="Title"/>
                 </label>
-                <label>
-                 Blog: 
-                    <textarea type="text" 
+                {/* <label> */}
+                 {/* Blog:  */}
+                   
+                    Blog:
+                     <ReactQuill
+                        theme='snow'
+                        name="blogpost" 
+                        placeholder="Write your story..."
+                        value={newBlogInfo.blogpost}
+                        onChange={handleBlogChange}
+                        style={{minHeight: '300px'}}
+                     />
+                    
+                     {/* <textarea type="text" 
                     name="blogpost" 
                     value={newBlogInfo.blogpost} 
                     onChange={handleAdd} 
-                    placeholder="Write your story..."/>
-                </label>
+                    placeholder="Write your story..."/> */}
+                {/* </label> */}
                 <label>
                  Bio: 
                     <textarea type="text" 
