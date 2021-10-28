@@ -20,8 +20,7 @@ function CreatePost ({setBlogs}) {
         }))
     }
 
-    function handleBlogchange(e){
-        console.log(e)
+    function handleBlogChange(e){
         setNewBlogInfo((currentNewBlogPost) => ({
             ...currentNewBlogPost,
             blogpost: e
@@ -87,7 +86,7 @@ function CreatePost ({setBlogs}) {
                         name="blogpost" 
                         placeholder="Write your story..."
                         value={newBlogInfo.blogpost}
-                        onChange={handleBlogchange}
+                        onChange={handleBlogChange}
                         style={{minHeight: '300px'}}
                      />
                     
