@@ -15,6 +15,14 @@
       "bio": "I am from planet Earth",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtvHGH0PqVF7Ml7UXmsW9wuZxa0IRHnm2HQ&usqp=CAU",
       "id": 2
+    },
+    {
+      "author": "Garrett",
+      "title": "code boss",
+      "blogpost": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac auctor nibh. Ut non fermentum tellus. In elementum sem a est pellentesque ultricies. Donec nec dignissim massa. Donec commodo eu sapien aliquet mollis. Fusce eu maximus leo, et facilisis mauris. Morbi vel ante nunc. Aenean posuere tincidunt nulla, eu viverra libero commodo sit amet. Aenean elementum erat ut mi blandit accumsan.\n",
+      "bio": "Im a guy who can code something ",
+      "image": "https://flatiron-school.slack.com/team/U024XEBR6SJ",
+      "id": 3
     }
   ]
 }
