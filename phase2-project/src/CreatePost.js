@@ -1,7 +1,7 @@
 import { useState } from "react"
 import ReactQuill from "react-quill"
 import 'react-quill/dist/quill.snow.css'
-// import styled from ''
+import styled from 'styled-components'
 
 function CreatePost ({setBlogs}) {
 
@@ -59,7 +59,7 @@ function CreatePost ({setBlogs}) {
     }
 
     return (
-        <div>
+        <CreatePostBox>
             <h2>Create a Post!</h2>
             <form onSubmit={handleSubmit}>
                 <label>
@@ -78,10 +78,8 @@ function CreatePost ({setBlogs}) {
                     onChange={handleAdd} 
                     placeholder="Title"/>
                 </label>
-                {/* <label> */}
-                 {/* Blog:  */}
-                   
-                    Blog:
+                 <div>
+                    {/* Blog: */}
                      <ReactQuill
                         theme='snow'
                         name="blogpost" 
@@ -90,16 +88,10 @@ function CreatePost ({setBlogs}) {
                         onChange={handleBlogChange}
                         style={{minHeight: '300px'}}
                      />
-                    
-                     {/* <textarea type="text" 
-                    name="blogpost" 
-                    value={newBlogInfo.blogpost} 
-                    onChange={handleAdd} 
-                    placeholder="Write your story..."/> */}
-                {/* </label> */}
+                 </div>
                 <label>
                  Bio: 
-                    <textarea type="text" 
+                    <input id="input" type="text" 
                     name="bio" 
                     value={newBlogInfo.bio} 
                     onChange={handleAdd} 
@@ -107,29 +99,43 @@ function CreatePost ({setBlogs}) {
                 </label>
                 <label>
                  Image:
-                    <input type="text" 
+                    <input id="image" type="text" 
                     name="image" 
                     value={newBlogInfo.image} 
                     onChange={handleAdd} 
                     placeholder="Upload your photo"/>
                 </label>
-                <button>Post</button>
+                <button id="post">Post</button>
             </form>
-        </div>
+        </CreatePostBox>
     )
 };
 
 
 export default CreatePost;
 
-
-
-
-
-// const createPostBox = styled.div`
-//     box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
-//     margin: 30px;
-//     border: 40px;
-//     width: 500px;
-//     height: 160px;
-//     border-radius: 8px;
+const CreatePostBox = styled.div`
+    box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
+    margin: auto;
+    border: auto;
+    width: 500px;
+    border-radius: 8px;
+    #input {
+        height: 100px;
+        width: 450px;
+        display: flex;
+    }
+    #image {
+        height: 30px;
+        width: 450px;
+        display: flex;
+    }
+    #post {
+        border-radius: 10px;
+        height: 30px;
+        width: 60px;
+        display: center;
+        margin: 50px;
+    }
+    `
+    
