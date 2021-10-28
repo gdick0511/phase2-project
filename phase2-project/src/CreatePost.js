@@ -118,7 +118,7 @@ const CreatePostBox = styled.div`
     box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
     margin: auto;
     border: auto;
-    width: 500px;
+    width: 700px;
     border-radius: 8px;
     background-color: white;
     #input {
