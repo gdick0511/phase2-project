@@ -1,4 +1,3 @@
-
 import UserCard from './UserCard'
 
 function UserContainer ({blogs}) {

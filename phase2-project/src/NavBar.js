@@ -4,23 +4,27 @@ import styled from 'styled-components'
 
 function NavBar () {
     return(
-        <NavBarContainer>
-            <NavLink to="/">
+        <div>
+            <NavLinkContainer to="/">
              Home
-            </NavLink> 
-            <NavLink to="/about">
-             About
-            </NavLink>
-            <NavLink to="/createpost">
-             CreatePost 
-            </NavLink> 
-        </NavBarContainer>
+            </NavLinkContainer> 
+            <NavLinkContainer to="/about">
+             About The Authors
+            </NavLinkContainer>
+            <NavLinkContainer to="/createpost">
+             Create a Post 
+            </NavLinkContainer> 
+        </div>
     )
 };
 
 export default NavBar
 
-const NavBarContainer = styled.div`
+const NavLinkContainer = styled(NavLink)`
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: center;
+    color: gold;
+    font-size: 25px;
 `

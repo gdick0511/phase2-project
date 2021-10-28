@@ -10,7 +10,7 @@ function UserCard ({author , bio , image}) {
     }
     return(
         <UserDecorations onClick={handleBioClick}>
-            <h2>Author: {author}</h2>
+            <h2>Author: {author} </h2>
             <h2>Profile Pic: </h2>
             <img src = {image} />
             {showBio ? <h3>Bio: {bio}</h3> : null}
@@ -22,18 +22,26 @@ export default UserCard
 
 const UserDecorations = styled.div`
     box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
-    margin: 2%;
-    padding: 1%;
+    margin: auto;
+    padding: auto;
     width: 700px;
     max-height: 100%;
     border-radius: 8px;
     text-wrap: wrap;
-    overflow: auto;
+    background-color: white;
     text-overflow: ellipsis;
-    h2,h3,img {
+    h2,h3{
         text-align: center;
         vertical-align: middle;
         text-wrap: wrap;
+    }
+    img {
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 50%;
     }
 
 `

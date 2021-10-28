@@ -4,6 +4,8 @@ import NavBar from './NavBar'
 import Home from './Home'
 import About from './About'
 import CreatePost from './CreatePost'
+import styled from 'styled-components'
+
 
 function App() {
   const [blogs, setBlogs] = useState([])
@@ -16,7 +18,7 @@ function App() {
   console.log(blogs)
 
   return (
-    <div>
+    <AppContainerStyle>
       <NavBar />
         <Switch>
           <Route path="/about">  
@@ -29,9 +31,13 @@ function App() {
             <Home blogs={blogs}/>
           </Route>
         </Switch>  
-    </div>
+    </AppContainerStyle>
   );
 }
 
 
 export default App;
+
+const AppContainerStyle = styled.div`
+  background-color: purple;
+`

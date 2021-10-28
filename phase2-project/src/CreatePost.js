@@ -90,7 +90,7 @@ function CreatePost ({setBlogs}) {
                      />
                  </div>
                 <label>
-                 Bio: 
+                 Author Bio: 
                     <input id="input" type="text" 
                     name="bio" 
                     value={newBlogInfo.bio} 
@@ -98,7 +98,7 @@ function CreatePost ({setBlogs}) {
                     placeholder="Your bio here..."/>
                 </label>
                 <label>
-                 Image:
+                 Profile Pic:
                     <input id="image" type="text" 
                     name="image" 
                     value={newBlogInfo.image} 
@@ -120,22 +120,24 @@ const CreatePostBox = styled.div`
     border: auto;
     width: 500px;
     border-radius: 8px;
+    background-color: white;
     #input {
         height: 100px;
         width: 450px;
         display: flex;
+        margin: auto;
     }
     #image {
         height: 30px;
         width: 450px;
         display: flex;
+        margin: auto;
     }
     #post {
         border-radius: 10px;
         height: 30px;
-        width: 60px;
-        display: center;
-        margin: 50px;
+        width: 100px;
+        margin: 40%;
     }
     `
     
