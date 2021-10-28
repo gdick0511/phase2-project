@@ -19,7 +19,6 @@ function CreatePost ({setBlogs}) {
 
     function handleSubmit(e){
         e.preventDefault()
-        // console.log('YEET')
         const newBlog ={
             author: newBlogInfo.author,
             title: newBlogInfo.title,
