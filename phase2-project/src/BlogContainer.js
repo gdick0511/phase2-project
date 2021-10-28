@@ -1,4 +1,5 @@
 import BlogCard from './BlogCard'
+// import styled from 'react-components'
 
 
 function BlogContainer ({blogs}) {

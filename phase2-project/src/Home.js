@@ -1,12 +1,24 @@
 import BlogContainer from "./BlogContainer"
+import styled from 'styled-components'
 
 function Home ({blogs}) {
     return (
-        <div>
-            <h2>Home</h2>
+        <HomeContainer>
+            <header>Home</header>
            <BlogContainer blogs={blogs}/>
-        </div>
+        </HomeContainer>
     )
 };
 
 export default Home
+
+
+const HomeContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    header{ 
+        display: flex;
+        justify-content: center;
+    }
+   
+`
