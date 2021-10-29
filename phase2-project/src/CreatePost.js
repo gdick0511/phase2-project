@@ -79,7 +79,6 @@ function CreatePost ({setBlogs}) {
                     placeholder="Title"/>
                 </label>
                  <div>
-                    {/* Blog: */}
                      <ReactQuill
                         theme='snow'
                         name="blogpost" 
