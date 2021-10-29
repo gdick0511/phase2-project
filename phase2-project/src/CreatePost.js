@@ -121,7 +121,7 @@ const CreatePostBox = styled.div`
     width: 700px;
     border-radius: 8px;
     background-color: white;
-    min-height: 100vh;
+    min-height: 80vh;
     #input {
         height: 100px;
         width: 450px;
@@ -136,9 +136,12 @@ const CreatePostBox = styled.div`
     }
     #post {
         border-radius: 10px;
-        height: 30px;
-        width: 100px;
-        margin: 40%;
+        height: 50px;
+        width: 200px;
+        margin: 35%;
+        font-size: 25px;
+        background-color: purple;
+        color: gold;
     }
     `
     

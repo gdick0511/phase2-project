@@ -40,4 +40,5 @@ export default App;
 
 const AppContainerStyle = styled.div`
   background-color: purple;
+  font-family: 'Simonetta', cursive;
 `
