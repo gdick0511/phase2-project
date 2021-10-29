@@ -63,7 +63,7 @@ function CreatePost ({setBlogs}) {
             <h2>Create a Post!</h2>
             <form onSubmit={handleSubmit}>
                 <label>
-                 Author:
+                 <h4 id="authorFirst">Author:</h4>
                     <input type="text" 
                     name="author" 
                     value={newBlogInfo.author} 
@@ -71,7 +71,7 @@ function CreatePost ({setBlogs}) {
                     placeholder="Author name here..."/>
                 </label>
                 <label>
-                 Title
+                 <h4 id="title">Title:</h4>
                     <input type="text" 
                     name="title" 
                     value={newBlogInfo.title} 
@@ -90,7 +90,7 @@ function CreatePost ({setBlogs}) {
                      />
                  </div>
                 <label>
-                 Author Bio: 
+                <h4 id="author">Author Bio</h4>
                     <input id="input" type="text" 
                     name="bio" 
                     value={newBlogInfo.bio} 
@@ -98,7 +98,7 @@ function CreatePost ({setBlogs}) {
                     placeholder="Your bio here..."/>
                 </label>
                 <label>
-                 Profile Pic:
+                 <h4 id="pic">Profile Pic:</h4>
                     <input id="image" type="text" 
                     name="image" 
                     value={newBlogInfo.image} 
@@ -142,6 +142,20 @@ const CreatePostBox = styled.div`
         font-size: 25px;
         background-color: purple;
         color: gold;
+    }
+    h2 {
+        text-align: center;
+    }
+    #author,#pic  {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    #authorTitle,#title: {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: red;
     }
     `
     

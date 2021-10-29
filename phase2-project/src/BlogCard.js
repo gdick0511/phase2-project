@@ -41,7 +41,7 @@ const Card = styled.div`
     padding: 1%;
     width: 700px;
     max-height: 100%;
-    border-radius: 
+    border-radius: 8px;
     text-wrap: wrap;
     overflow: auto;
     text-overflow: ellipsis;

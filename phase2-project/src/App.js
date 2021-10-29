@@ -18,6 +18,7 @@ function App() {
   
   return (
     <AppContainerStyle>
+      <h1 className = "header">Thicccque Boi Blogs 🍫📝</h1>
       <NavBar />
         <Switch>
           <Route path="/about">  
@@ -40,4 +41,8 @@ export default App;
 const AppContainerStyle = styled.div`
   background-color: purple;
   font-family: 'Simonetta', cursive;
+
+  .header{
+    background-color: gold;
+  }
 `
