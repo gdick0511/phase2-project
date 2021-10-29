@@ -40,5 +40,4 @@ const Card = styled.div`
         vertical-align: middle;
         text-wrap: wrap;
     }
-
 `

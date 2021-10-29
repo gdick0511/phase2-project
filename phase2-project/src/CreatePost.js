@@ -121,6 +121,7 @@ const CreatePostBox = styled.div`
     width: 700px;
     border-radius: 8px;
     background-color: white;
+    min-height: 100vh;
     #input {
         height: 100px;
         width: 450px;

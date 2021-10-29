@@ -27,4 +27,5 @@ const NavLinkContainer = styled(NavLink)`
     justify-content: center;
     color: gold;
     font-size: 25px;
+    // min-height: 100vh;
 `
