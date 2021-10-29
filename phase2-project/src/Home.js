@@ -1,11 +1,11 @@
 import BlogContainer from "./BlogContainer"
 import styled from 'styled-components'
 
-function Home ({blogs}) {
+function Home ({blogs, handleDeleteBlog, setBlogs}) {
     return (
        
         <HomeContainer>
-           <BlogContainer blogs={blogs}/>
+           <BlogContainer blogs={blogs} handleDeleteBlog={handleDeleteBlog} setBlogs={setBlogs}/>
         </HomeContainer>
       
     )

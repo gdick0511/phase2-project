@@ -4,7 +4,6 @@ function About ({blogs}) {
     
     return(
         <UserContainerStyle>
-            {/* <h2></h2> */}
             <UserContainer blogs={blogs} />
         </UserContainerStyle>
     )

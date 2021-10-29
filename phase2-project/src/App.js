@@ -15,8 +15,7 @@ function App() {
    .then(resp => resp.json())
    .then(allBlogs => setBlogs(allBlogs))
   },[])
-  console.log(blogs)
-
+  
   return (
     <AppContainerStyle>
       <NavBar />
@@ -28,7 +27,7 @@ function App() {
             <CreatePost setBlogs={setBlogs}/>
           </Route>
           <Route path="/">
-            <Home blogs={blogs}/>
+            <Home blogs={blogs} setBlogs={setBlogs}/>
           </Route>
         </Switch>  
     </AppContainerStyle>
