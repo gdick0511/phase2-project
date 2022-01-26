@@ -3,11 +3,9 @@ import styled from 'styled-components'
 
 function Home ({blogs, handleDeleteBlog, setBlogs}) {
     return (
-       
         <HomeContainer>
            <BlogContainer blogs={blogs} handleDeleteBlog={handleDeleteBlog} setBlogs={setBlogs}/>
         </HomeContainer>
-      
     )
 };
 

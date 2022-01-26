@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 function CreatePost ({setBlogs}) {
 
-
     const [newBlogInfo, setNewBlogInfo] = useState({
         author: '',
         title: '',
@@ -109,7 +108,6 @@ function CreatePost ({setBlogs}) {
         </CreatePostBox>
     )
 };
-
 
 export default CreatePost;
 
