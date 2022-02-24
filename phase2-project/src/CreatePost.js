@@ -36,7 +36,7 @@ function CreatePost ({setBlogs}) {
             bio: newBlogInfo.bio,
             image: newBlogInfo.image
         }
-        fetch('http://localhost:4000/blogs', {
+        fetch('https://phase2-project-backend.herokuapp.com/blogs', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
