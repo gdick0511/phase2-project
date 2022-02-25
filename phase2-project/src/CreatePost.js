@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 function CreatePost ({setBlogs}) {
 
-
     const [newBlogInfo, setNewBlogInfo] = useState({
         author: '',
         title: '',
@@ -37,7 +36,9 @@ function CreatePost ({setBlogs}) {
             bio: newBlogInfo.bio,
             image: newBlogInfo.image
         }
-        fetch('https://phase2-project-backend-kam.herokuapp.com/blogs', {
+
+        fetch('https://phase2-project-backend.herokuapp.com/blogs', {
+
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -109,7 +110,6 @@ function CreatePost ({setBlogs}) {
         </CreatePostBox>
     )
 };
-
 
 export default CreatePost;
 

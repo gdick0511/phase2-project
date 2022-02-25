@@ -2,7 +2,6 @@ import {useState} from 'react'
 import styled from 'styled-components'
 import parse from 'html-react-parser'
 
-
 function BlogCard ({author , title, blogpost, id, setBlogs, blogs}) {
   
     const [showBlog, setShowBlog] = useState(false)
@@ -12,7 +11,8 @@ function BlogCard ({author , title, blogpost, id, setBlogs, blogs}) {
     }
 
     function handleDeleteBlog(){
-        fetch(`https://phase2-project-backend-kam.herokuapp.com/blogs/${id}`, {
+        fetch(`https://phase2-project-backend.herokuapp.com/blogs/${id}`, {
+            
             method: 'DELETE',
         })
         .then(() => {
@@ -22,7 +22,6 @@ function BlogCard ({author , title, blogpost, id, setBlogs, blogs}) {
     }
 
     return(
-        
         <Card onClick={handleBlogClick}>
             <h1>{title}</h1>
             <h2>By: {author} </h2>
