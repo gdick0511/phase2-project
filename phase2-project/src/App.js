@@ -6,12 +6,13 @@ import About from './About'
 import CreatePost from './CreatePost'
 import styled from 'styled-components'
 
+//OG:http://localhost:4000/blogs
 
 function App() {
   const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
-   fetch('http://localhost:4000/blogs')
+   fetch('https://phase2-project-backend-kam.herokuapp.com/blogs')
    .then(resp => resp.json())
    .then(allBlogs => setBlogs(allBlogs))
   },[])
@@ -34,6 +35,8 @@ function App() {
     </AppContainerStyle>
   );
 }
+
+
 
 
 export default App;

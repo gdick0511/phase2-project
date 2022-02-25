@@ -12,7 +12,7 @@ function BlogCard ({author , title, blogpost, id, setBlogs, blogs}) {
     }
 
     function handleDeleteBlog(){
-        fetch(`http://localhost:4000/blogs/${id}`, {
+        fetch(`https://phase2-project-backend-kam.herokuapp.com/blogs/${id}`, {
             method: 'DELETE',
         })
         .then(() => {
